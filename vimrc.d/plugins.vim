@@ -3,7 +3,6 @@
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-b>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " Go semantics dosen't work with gcc-go
 if !empty(glob("/usr/bin/gccgo"))
@@ -15,8 +14,8 @@ let g:VimTodoListsMoveItems = 0
 " }}}
 " {{{ ultisnips
 let g:UltiSnipsExpandTrigger="<TAB>"
-let g:UltiSnipsJumpForwardTrigger="<TAB>"
-let g:UltiSnipsJumpBackwardTrigger="<S-TAB>"
+let g:UltiSnipsJumpForwardTrigger="<C-l>"
+let g:UltiSnipsJumpBackwardTrigger="<C-h>"
 " }}}
 " {{{ syntastic
 let g:syntastic_always_populate_loc_list = 1
