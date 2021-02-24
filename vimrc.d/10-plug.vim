@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://gitlab.com/yrhki/vim-blackout.git'
 
 " Completion
-"Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --all' }
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --all' }
 " Syntax checking
 Plug 'vim-syntastic/syntastic'
 

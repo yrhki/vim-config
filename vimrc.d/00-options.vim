@@ -1,5 +1,3 @@
-
-color blackout
 set expandtab
 set relativenumber number
 syntax on
