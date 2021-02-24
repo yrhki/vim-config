@@ -3,3 +3,5 @@ swap
 backup
 .netrwhist
 plugged
+
+autoload/plug.vim
