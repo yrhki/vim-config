@@ -45,6 +45,8 @@ Plug 'aserebryakov/vim-todo-lists'
 Plug 'tpope/vim-speeddating'
 " Easily align and format
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 

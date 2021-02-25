@@ -1,12 +1,10 @@
 " Mappings
 
 " {{{ Normal mode
-" move windows with alt + arrow
-" TODO: how to map alt
-" nnoremap <silent> <A-k> :wincmd k<CR>
-" nnoremap <silent> <A-j> :wincmd j<CR>
-" nnoremap <silent> <A-h> :wincmd h<CR>
-" nnoremap <silent> <A-l> :wincmd l<CR>
+" fzf commands
+nnoremap <leader>ll :BLines<CR>
+nnoremap <leader>lh :Helptags<CR>
+nnoremap <leader>lf :Files<CR>
 
 nnoremap <leader>D :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>r :YcmCompleter GoToReferences<CR>
