@@ -37,4 +37,7 @@ endif
 " move line with shift + up/down
 inoremap <S-Up>   <Esc>:m-2<CR> i
 inoremap <S-Down> <Esc>:m+<CR> i
+" Move popup menu by C-j and C-k
+inoremap <expr> <C-j>     pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k>     pumvisible() ? "\<C-p>" : "\<C-k>"
 " }}}
