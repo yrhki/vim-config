@@ -6,3 +6,12 @@ snippet yaml "YAML field"
 \`yaml:"${1:field}"\`
 endsnippet
 
+snippet er "Single line error"
+if err != nil { return ${1:err} }
+$0
+endsnippet
+
+snippet pv "Print full value"
+fmt.Printf("%#+v\n", ${1:value})
+$0
+endsnippet
