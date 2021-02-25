@@ -6,6 +6,12 @@ nnoremap <leader>ll :BLines<CR>
 nnoremap <leader>lh :Helptags<CR>
 nnoremap <leader>lf :Files<CR>
 
+" fugitive commands
+nnoremap <leader>g :Git<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>ga :Git add -p %:p<CR>
+
 nnoremap <leader>D :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>r :YcmCompleter GoToReferences<CR>
 "nnoremap <leader>R :YcmCompleter RefactorRename<CR>
