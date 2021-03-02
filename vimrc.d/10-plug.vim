@@ -17,33 +17,17 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'https://gitlab.com/yrhki/vim-blackout.git'
-
-" Completion
+Plug 'yrhki/vim-blackout'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --all' }
-" Syntax checking
 Plug 'vim-syntastic/syntastic'
-
-" Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
-" Markdown
 Plug 'plasticboy/vim-markdown'
-" org-mode
 "Plug 'jceb/vim-orgmode'
-
-" Status/tabline
 Plug 'vim-airline/vim-airline'
-
-" Git
 Plug 'tpope/vim-fugitive'
-" Todo lists
 Plug 'aserebryakov/vim-todo-lists'
-
-" Increment dates
 Plug 'tpope/vim-speeddating'
-" Easily align and format
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
