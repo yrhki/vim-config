@@ -16,8 +16,8 @@ set viminfo+='1000,n~/.vim/viminfo
 " Enable mouse
 set mouse=a
 
-for f in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
-	exe 'source' f
+for s:f in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
+	exe 'source' s:f
 endfor
 
 " Close if NERDTree is last window
