@@ -12,10 +12,13 @@ nnoremap <leader>gd :Gdiffsplit<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>ga :Git add -p %:p<CR>
 
-nnoremap <leader>D :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>r :YcmCompleter GoToReferences<CR>
-"nnoremap <leader>R :YcmCompleter RefactorRename<CR>
-nmap <leader>d <plug>(YCMHover)
+" coc
+nmap <leader>cD <Plug>(coc-definition)
+nmap <leader>cr <Plug>(coc-references-used)
+nmap <leader>cR <Plug>(coc-rename)
+nmap <leader>cR <Plug>(coc-rename)
+nnoremap <silent> <leader>d :call CocActionAsync('doHover')<CR>
+nnoremap <silent> <leader>cf :CocFix<CR>
 
 " clear and execute current file
 noremap <F4>  :! clear && %:p 
@@ -26,6 +29,7 @@ noremap <F3> :!
 " show NERDTree
 noremap <C-F2> :NERDTreeToggle<CR>
 " }}}
+
 " {{{ Visual mode
 " move selection to command-line
 vnoremap <C-F> y :! <C-R>" <HOME><Right>
@@ -37,6 +41,7 @@ else
     vnoremap <C-C> y :call system('xclip -selection clipboard', @0)<CR>
 endif
 " }}}
+
 " {{{ Insert mode
 " move line with shift + up/down
 inoremap <S-Up>   <Esc>:m-2<CR> i

@@ -18,7 +18,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'yrhki/vim-blackout'
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --all' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-syntastic/syntastic'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'

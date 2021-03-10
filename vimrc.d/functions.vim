@@ -1,12 +1,4 @@
 
-function s:RefactorRename()
-    let input = input("Rename: ")
-    
-    if input != ""
-        execute "YcmCompleter RefactorRename" input
-    endif
-endfunction
-
 function! s:Cm()
     let input = input("CM: ")
     if input != ""
@@ -26,7 +18,7 @@ function s:Format()
             exe "%!jq"
         endif
     else
-        exe "YcmCompleter Format"
+        call CocActionAsync('format')
     endif
 
     if nline != line(".")
@@ -38,6 +30,5 @@ endfunction
 command Cm call <SID>Cm()
 
 noremap <C-c><C-m> :Cm<CR>
-nnoremap <leader>R :call <SID>RefactorRename()<CR>
 nnoremap <leader>f :call <SID>Format()<CR>
 
